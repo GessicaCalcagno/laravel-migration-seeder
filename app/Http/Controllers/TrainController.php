@@ -12,7 +12,7 @@ class TrainController extends Controller
         $today = Carbon::today();
         $trains = Train::where('orario_di_partenza', '>=', $today->format('H:i:s'))
         ->get();
-        dd($trains);
-        return view('trains.index', compact('trains'));
+        //dd($trains);
+        return view('trains', compact('trains'));
     }
 }
