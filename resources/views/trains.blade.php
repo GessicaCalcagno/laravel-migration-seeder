@@ -2,12 +2,11 @@
 @section('content')
     <div class="container">
         <h1>Treni</h1>
-        {{-- ________DATA?_____ --}}
         <table class="table">
             <thead>
               <tr>
                 <th scope="col">Azienda</th>
-                <th scope="col">Azienda</th>
+                <th scope="col">Data di partenza</th>
                 <th scope="col">Stazione di Partenza</th>
                 <th scope="col">Stazione di Arrivo</th>
                 <th scope="col">Orario di Partenza</th>
@@ -22,8 +21,8 @@
               <tr> @foreach ($trains as $train)
                 <tr>
                     <th scope="row">{{ $train->azienda }}</td>
-                    <td>{{ $train->stazione_di_partenza }}</td>
                     <td>{{ $train->data_di_partenza }}</td>
+                    <td>{{ $train->stazione_di_partenza }}</td>
                     <td>{{ $train->stazione_di_arrivo }}</td>
                     <td>{{ $train->orario_di_partenza }}</td>
                     <td>{{ $train->orario_di_arrivo }}</td>
