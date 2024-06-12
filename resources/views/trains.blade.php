@@ -7,6 +7,7 @@
             <thead>
               <tr>
                 <th scope="col">Azienda</th>
+                <th scope="col">Azienda</th>
                 <th scope="col">Stazione di Partenza</th>
                 <th scope="col">Stazione di Arrivo</th>
                 <th scope="col">Orario di Partenza</th>
@@ -22,6 +23,7 @@
                 <tr>
                     <th scope="row">{{ $train->azienda }}</td>
                     <td>{{ $train->stazione_di_partenza }}</td>
+                    <td>{{ $train->data_di_partenza }}</td>
                     <td>{{ $train->stazione_di_arrivo }}</td>
                     <td>{{ $train->orario_di_partenza }}</td>
                     <td>{{ $train->orario_di_arrivo }}</td>
