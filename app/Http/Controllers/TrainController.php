@@ -9,9 +9,10 @@ use Illuminate\Http\Request;
 class TrainController extends Controller
 {
     public function index(){
-        $today = Carbon::today();
-        $trains = Train::where('orario_di_partenza', '>=', $today->format('H:i:s'))
-        ->get();
+        //$today = Carbon::today();
+        $trains = Train::all();
+        // where('orario_di_partenza', '>=', $today->format('H:i:s'))
+        // ->get();
         //dd($trains);
         return view('trains', compact('trains'));
     }
